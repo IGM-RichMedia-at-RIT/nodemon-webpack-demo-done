@@ -10,15 +10,15 @@
     "nodemon": "nodemon -e js,html,css --watch ./src --watch ./hosted ./src/server.js",
     "build": "webpack"
   },
-  "author": "Cody Van De Mark / Austin Willoughby",
+  "author": "Austin Willoughby",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.8.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.4",
     "nodemon": "^2.0.15",
+    "underscore": "^1.13.2",
     "webpack": "^5.68.0",
-    "webpack-cli": "^4.9.2",
-    "underscore": "^1.13.2"
+    "webpack-cli": "^4.9.2"
   }
 }
