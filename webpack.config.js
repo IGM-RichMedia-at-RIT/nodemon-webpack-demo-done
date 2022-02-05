@@ -30,8 +30,16 @@ module.exports = {
         Using true will allow us to keep the build script running and will speed up
         our development time since we do not need to manually rerun builds after every
         edit.
+
+        Watch options gives some extra configuration options for the watch functionality.
+        The aggregateTimeout adds a slight delay to the build. This combines any rebuild
+        events fired in quick succession (such as pressing ctrl+s multiple times quickly)
+        into a single rebuild.
     */
     watch: true,
+    watchOptions: {
+        aggregateTimeout: 200,
+    },
 
     // The output object defines various things about the output bundle.
     output: {
