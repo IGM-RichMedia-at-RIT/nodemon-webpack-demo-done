@@ -8,7 +8,7 @@
     "pretest": "eslint ./src --fix",
     "test": "echo \"Tests complete\"",
     "nodemon": "nodemon -e js,html,css --watch ./src --watch ./hosted ./src/server.js",
-    "build": "webpack"
+    "heroku-postbuild": "webpack"
   },
   "author": "Austin Willoughby",
   "license": "ISC",
