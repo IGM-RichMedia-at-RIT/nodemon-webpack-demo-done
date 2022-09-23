@@ -19,10 +19,10 @@ module.exports = {
     entry: './client/client.js',
 
     /* The mode determines the type of build process and output webpack
-       should use. Production will be fine 99% of the time, although if
-       you need to debug some things you may need to swap it to 'development'
+       should use. We will use development while working on our local machine.
+       Our heroku config will use production to minify our code.
     */
-    mode: 'production',
+    mode: 'development',
 
     /* The watch boolean determines if the webpack command (which we have in
         our package.json as 'npm run build') will execute once (set to false)
