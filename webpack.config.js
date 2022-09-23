@@ -19,8 +19,9 @@ module.exports = {
     entry: './client/client.js',
 
     /* The mode determines the type of build process and output webpack
-       should use. We will use development while working on our local machine.
-       Our heroku config will use production to minify our code.
+       should use. Our config file will use the "development" mode, which will make
+       it easy to debug our client code. When Heroku builds our code, it will use
+       the "production" mode, which will be minified.
     */
     mode: 'development',
 
@@ -36,7 +37,7 @@ module.exports = {
         events fired in quick succession (such as pressing ctrl+s multiple times quickly)
         into a single rebuild.
     */
-    watch: true,
+    //watch: true,
     watchOptions: {
         aggregateTimeout: 200,
     },

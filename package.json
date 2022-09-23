@@ -9,7 +9,8 @@
     "test": "echo \"Tests complete\"",
     "nodemon": "nodemon -e js,html,css --watch ./src --watch ./hosted ./src/server.js",
     "buildBundle": "webpack",
-    "heroku-postbuild": "webpack --config heroku.config.js"
+    "watchBundle": "webpack watch",
+    "heroku-postbuild": "webpack --mode production"
   },
   "author": "Austin Willoughby",
   "license": "ISC",
