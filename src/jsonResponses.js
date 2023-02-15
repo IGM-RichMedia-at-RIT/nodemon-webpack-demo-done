@@ -10,7 +10,7 @@ const respondJSON = (request, response, status, object) => {
 
 const success = (request, response) => {
   const responseJSON = {
-    message: 'This is a successful response',
+    message: 'This is a successful response!',
   };
 
   respondJSON(request, response, 200, responseJSON);
