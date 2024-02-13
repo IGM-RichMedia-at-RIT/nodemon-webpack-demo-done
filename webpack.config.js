@@ -21,7 +21,8 @@ module.exports = {
     /* The mode determines the type of build process and output webpack
        should use. Our config file will use the "development" mode, which will make
        it easy to debug our client code. When Heroku builds our code, it will use
-       the "production" mode, which will be minified.
+       the "production" mode, which will be minified. Heroku does this by calling
+       our heroku-postbuild script after downloading and installing everything.
     */
     mode: 'development',
 
