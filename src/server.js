@@ -21,13 +21,14 @@ const urlStruct = {
 };
 
 const onRequest = (request, response) => {
-  const parsedUrl = url.parse(request.url);
-  const params = query.parse(parsedUrl.query);
+  const protocol = request.connection.encrypted ? 'https' : 'http';
+  const parsedUrl = new URL(request.url, `${protocol}://${request.headers.host}`);
+  request.query = Object.fromEntries(parsedUrl.searchParams);
 
   if (urlStruct[parsedUrl.pathname]) {
-    urlStruct[parsedUrl.pathname](request, response, params);
+    urlStruct[parsedUrl.pathname](request, response);
   } else {
-    urlStruct.notFound(request, response, params);
+    urlStruct.notFound(request, response);
   }
 };
 
