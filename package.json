@@ -15,14 +15,14 @@
   "author": "Austin Willoughby",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.29.1",
-    "nodemon": "^3.0.3"
+    "eslint-plugin-import": "^2.30.0",
+    "nodemon": "^3.1.7"
   },
   "dependencies": {
-    "underscore": "^1.13.6",
-    "webpack": "^5.90.1",
+    "underscore": "^1.13.7",
+    "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4"
   }
 }
